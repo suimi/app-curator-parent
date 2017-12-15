@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: app
+  cloud:
+    zookeeper:
+      connect-string: 192.168.6.164:2188
+
+
+logging:
+  level:
+    com.suimi: debug
+    org.apache.curator: debug
+server:
+  port: 8080
+
+endpoints:
+  shutdown:
+    enabled: true
+management:
+  security:
+    enabled: false
